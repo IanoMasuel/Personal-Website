@@ -9,37 +9,112 @@
     <script src="..\js\infinite-scroll-docs\infinite-scroll.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="..\js\inScrl-init.js"></script>
+
 </head>
 <body>
-    <div class="nav-grid">
-        <div class="home-box nav-box">home</div>
-        <div class="about-box nav-box">about</div>
-        <div class="arrow"> </div>
-        <div class="skills-box nav-box">skills</div>  
-        <div class="experience-box nav-box">experience</div>
-        <div class="interest-box nav-box">interest</div>
+<!-- homepage -->
+
+<div class="home" id="home">
+    <!-- navagation -->
+    <div>
+        <div class="nav-grid">
+            <div class="home-box nav-box">home</div>
+            <div class="about-box nav-box">about</div>
+            <div class="arrow"> </div>
+            <div class="skills-box nav-box">skills</div>  
+            <div class="experience-box nav-box">experience</div>
+            <div class="interest-box nav-box">interest</div>
+        </div>
+        
     </div>
-    <div class="content-grid">
+    <!-- home images -->
+    <div class="content-grid-home">
         <img 
-        class=image
+        class=image-home
         class=img-left 
         src="https://images.pexels.com/photos/1477350/pexels-photo-1477350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="Smiley face"
         >
         <img
-        class=image 
+        class=image-home 
         class=img-center 
         src="https://images.pexels.com/photos/1474657/pexels-photo-1474657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="Smiley face"
         >
         <img
-        class=image 
+        class=image-home 
         class=img-right 
         src="https://images.pexels.com/photos/1464158/pexels-photo-1464158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="Smiley face"
         >
     </div>
-    <div class="line-break"></div>
-    <!-- <h1>This is a test title</h1> -->
+    <div class="line-break-home"></div>
+    <div class="line-break-home"></div> <div class="line-break-home"></div>
+    <div class="bottom-text home">protfolio - résumé - blog</div>
+</div>
+
+<div class="about" id="about">
+    <div class="line-break-about"></div>
+    <div class="greeting">hello, i am samuel</div>
+    <div class="content-grid-about">
+        <p class="text-about">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <img 
+        class=image-about
+        src="https://images.pexels.com/photos/1477350/pexels-photo-1477350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="Smiley face"
+        >
+    </div>
+</div>
+
+<!-- skillspage -->
+
+<div class="skills" id="skills">
+    <div class="thin-line-break-skills"></div>
+    <div class="skills-head">skills</div>
+    <div class="line-break-skills"></div>
+ 
+    <div class="content-grid-skills">
+        <div>
+            <div class="grid-skills grid-1-skills">Web Design</div>
+            <div class="line-block-skills"></div>
+            <section class="skill-list-block">
+                <div class="skill-list-header-1">knowledge scope</div>
+                <div class="content-grid-list1">
+                    <div class="skill-list-1">skill1</div>
+                    <div class="skill-list-1">skill1</div>
+                    <div class="skill-list-1">skill1</div>
+                    <div class="skill-list-1">skill1</div>
+                    <div class="skill-list-1">skill1</div>
+                    <div class="skill-list-1">skill1</div>
+                    <div class="skill-list-1">skill1</div>
+                    <div class="skill-list-1">skill1</div>
+                    <div class="skill-list-1">skill1</div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <div class="grid-skills" class="grid-1-skills">Web Design</div>
+            <!-- Block  -->
+            <div class="line-block-skills"></div>
+            <div class="skill-list-header-1">knowledge scope</div>
+            <div class="content-grid-list1">
+                <div class="skill-list-1">skill1</div>
+                <div class="skill-list-1">skill1</div>
+                <div class="skill-list-1">skill1</div>
+                <div class="skill-list-1">skill1</div>
+                <div class="skill-list-1">skill1</div>
+                <div class="skill-list-1">skill1</div>
+                <div class="skill-list-1">skill1</div>
+                <div class="skill-list-1">skill1</div>
+                <div class="skill-list-1">skill1</div>
+            </div>
+        </div>
+        <div class="grid-skills" class="grid-2-skills">Finance</div>
+        <div class="grid-skills" class="grid-3-skills">Other</div>
+    </div>
+</div>
+<div class="line-break-skill-bottom"></div>
 </body>
 </html>

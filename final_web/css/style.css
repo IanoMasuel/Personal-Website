@@ -16,6 +16,7 @@ h1 {
 
 /*Navagation*/
 .nav-grid {
+    position: fixed;
     display: grid;
     height: relative;
     width: relative;
@@ -24,13 +25,13 @@ h1 {
 }
 
 .nav-box {
-    padding: 10px;
+    margin: 15px;
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 150%;
+    font-size: 24px;
     text-transform: capitalize;
     text-align: center;
-    
+
 }
 
 .arrow {
@@ -39,6 +40,16 @@ h1 {
     border-left: 4vw solid transparent;
     border-right: 4vw solid transparent;
     border-top: 60px solid #f3573b;
+}
+
+.experience-box {
+    text-align: left;
+    margin-left: 4.3vw;
+}
+
+.skills-box {
+    text-align: left;
+    margin-left: 9.5vw;
 }
   
 /* .skills-box {
@@ -49,24 +60,143 @@ h1 {
     background: burlywood;   
 } */
 
-/*Content*/
+/*Home Content*/
 
-.content-grid {
+.content-grid-home {
     display: grid;
     grid-template: 100%/ 1fr 1fr 1fr;
 }
 
-.image {
+.image-home {
     width: fit-content;
     max-width: 100%;
-    height: 80vh;
+    height: 85vh;
 }
 
-.line-break {
+.line-break-home {
     height: 10px;
     background-color: #5f909c;
 }
+
+.bottom-text {
+    margin: 4vh;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family: Constantia;
+}
+
 /* .img-left {
     height: relative;
     width: relative;
 } */
+
+/*About Content*/
+.line-break-about {
+    height: 2px;
+    background-color: #d2e5ed;
+}
+.greeting {
+    margin: 4vh;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-grid-about {
+    display: grid;
+    grid-area: inherit;
+    margin: 40px 80px;
+    grid-template: 100%/ 3fr 1fr;
+    background-color: aliceblue;
+    margin-bottom: 1px
+}
+
+.text-about {
+    position: relative;
+    top: 8px;
+    left: 10px;
+    font-size: 1.8vw;
+    margin: 6vw; 
+}   
+
+.image-about {
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+    height: 70vh;   
+}
+.about {
+    /* background-color: #5f909c; */
+}
+
+/*Skills Content*/
+.thin-line-break-skills {
+    margin-top:50px;
+    height: 2px;
+    background-color: #d2e5ed;
+}
+
+.line-break-skills {
+    margin-top:10px;
+    height: 20px;
+    background-color: #d2e5ed;
+}
+
+.line-break-skill-bottom {
+    margin-top:50px;
+    height: 20px;
+    background-color: #d2e5ed;
+}
+
+.skills-head {
+    margin-top: 2vh;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family: Constantia;
+}
+
+.content-grid-skills{
+    display: grid;
+    height: relative;
+    padding: 1px;
+    margin-left: 400px;
+    margin-right: 400px;
+    grid-template: repeat(1,1fr)/1fr;
+    background-color: grey;
+}
+
+.grid-skills{
+    font-size: 30px;
+    text-align: center;
+    background-color: #d2e5ed;
+}
+
+.content-grid-list1 {
+    display: grid;
+    padding: 5px;
+    grid-template: repeat(1,1fr)/1fr 1fr;
+    text-align: center;
+    background-color: #d2e5ed;
+    border-color: black;
+    border-bottom-style: solid;
+    border-top-style: solid;
+}
+
+.skill-list-header-1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    background-color: #273336; 
+}
+
+.line-block-skills {
+    height: 4px;
+    background-color: grey;
+}
