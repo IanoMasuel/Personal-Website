@@ -1,8 +1,10 @@
+//Skill Block
+
 $( document ).ready(function() {
-    $(".skill-list-block").hide();
-    $( ".grid-1-skills").click(function( event ) {
-    
-        $(".skill-list-block").slideToggle(500);
+    $(".grid-skills-1").next().hide().next().hide();
+    $( ".grid-skills-1").click(function( event ) {
+        $(event.currentTarget).next().slideToggle(500).next().slideToggle(500);
+        $(event.currentTarget).parent().siblings().children().next().hide(500);
     });            
- 
+
 });

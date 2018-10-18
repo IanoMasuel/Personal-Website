@@ -1,4 +1,5 @@
 *{
+    /*margin trible */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,12 +17,15 @@ h1 {
 
 /*Navagation*/
 .nav-grid {
+    z-index: 1;
     position: fixed;
     display: grid;
     height: relative;
     width: relative;
     grid-template: 60px / 119.5fr 119.5fr 0fr 170fr 170fr 170fr;
     background-color: #25616e;
+    border-bottom-color: #d2e5ed;
+    border-bottom-style: solid;
 }
 
 .nav-box {
@@ -31,7 +35,7 @@ h1 {
     font-size: 24px;
     text-transform: capitalize;
     text-align: center;
-
+    
 }
 
 .arrow {
@@ -51,14 +55,11 @@ h1 {
     text-align: left;
     margin-left: 9.5vw;
 }
-  
-/* .skills-box {
-    background: burlywood;
-} */
 
-/* .about-box {
-    background: burlywood;   
-} */
+.interest-box {
+    text-align: left;
+    margin-left: 1.5vw;
+}
 
 /*Home Content*/
 
@@ -108,11 +109,9 @@ h1 {
 
 .content-grid-about {
     display: grid;
-    grid-area: inherit;
-    margin: 40px 80px;
-    grid-template: 100%/ 3fr 1fr;
+    margin: 8vh 0;
+    grid-template: 100%/ 2fr 1fr;
     background-color: aliceblue;
-    margin-bottom: 1px
 }
 
 .text-about {
@@ -127,7 +126,7 @@ h1 {
     width: fit-content;
     max-width: 100%;
     max-height: 100%;
-    height: 70vh;   
+    height: 35vmax;   
 }
 .about {
     /* background-color: #5f909c; */
@@ -141,7 +140,7 @@ h1 {
 }
 
 .line-break-skills {
-    margin-top:10px;
+    margin-bottom: 50px;
     height: 20px;
     background-color: #d2e5ed;
 }
@@ -152,7 +151,8 @@ h1 {
     background-color: #d2e5ed;
 }
 
-.skills-head {
+.header {
+    margin-bottom: 2vh; 
     margin-top: 2vh;
     font-size: 30px;
     text-align: center;
@@ -161,23 +161,27 @@ h1 {
     font-family: Constantia;
 }
 
-.content-grid-skills{
+.skills-block{
     display: grid;
     height: relative;
-    padding: 1px;
-    margin-left: 400px;
-    margin-right: 400px;
-    grid-template: repeat(1,1fr)/1fr;
-    background-color: grey;
+    padding: 0px;
+    margin: 12vh 10vw;
+    grid-template: repeat(1,1fr)/repeat(1, 1fr);
+    background-color: #273336;
 }
 
 .grid-skills{
+    padding: 1vh 0;
+    margin: 0vh 0 .5vh 0;
     font-size: 30px;
     text-align: center;
     background-color: #d2e5ed;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    
 }
 
-.content-grid-list1 {
+.content-grid-list-1 {
     display: grid;
     padding: 5px;
     grid-template: repeat(1,1fr)/1fr 1fr;
@@ -195,8 +199,62 @@ h1 {
     text-transform: capitalize;
     background-color: #273336; 
 }
+/* experience content */
 
-.line-block-skills {
-    height: 4px;
-    background-color: grey;
+/* container */
+.exp-container-1 {
+    height: 36vmax;
+}
+
+/* blocks */
+.exp-block-1 {
+    margin: 0 0;
+    background-color: #d2e5ed;
+    display: grid;
+    height: inherit;
+    grid-template: 1fr /1fr 2fr;
+}
+.exp-block-2 {
+    margin: 0 0;
+    background-color: #273336;
+    display: grid;
+    height: inherit;
+    grid-template: 1fr /2fr 1fr;
+}
+/* content */
+.exp-content-1 {
+    justify-content: center;
+    height: 36vmax;
+    width: 100%;
+    /* background-color: #f3573b; */
+    align-content: center;
+}
+
+.exp-content-1 img {
+    height: 20vmax;
+    display: block;
+    margin-top: relative;
+    margin-left: auto;
+    margin-right: auto; 
+    /* background-color: #f3a73a; */  
+}
+
+.exp-content-con-2 {
+    width: fit-content;
+    height: 36vmax;
+}
+
+.exp-content-2 {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: 10vmax;
+    font-size: 2vmax;
+}
+
+.exp-content-2 li {
+    margin-left: 50px;
 }
