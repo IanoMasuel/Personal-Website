@@ -1,10 +1,17 @@
 //Skill Block
 
-$( document ).ready(function() {
-    $(".grid-skills-1").next().hide().next().hide();
-    $( ".grid-skills-1").click(function( event ) {
-        $(event.currentTarget).next().slideToggle(500).next().slideToggle(500);
-        $(event.currentTarget).parent().siblings().children().next().hide(500);
-    });            
 
+
+$( document ).ready(function() {
+    $(".skill-list-header").next().hide().next().hide();
+    $(".skill-list-header").parent().prev().children().next().hide();
+    $( ".skill-list-header").click(function( event ) {
+        $(event.currentTarget).next().slideToggle(500).next().slideToggle(500);
+        
+        $(event.currentTarget).parent().siblings(["section"]).children().next().slideUp(500);
+        
+        $(event.currentTarget).parent().prev().children().children().animate({
+            width: $(event.currentTarget).parent().prev().children().children().attr('id')
+        }, 1500);
+    });
 });
